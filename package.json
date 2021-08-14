@@ -48,9 +48,6 @@
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "eslint --fix"
-    ],
-    "src/**/*.scss": [
-      "stylelint --syntax scss --fix"
     ]
   },
   "husky": {

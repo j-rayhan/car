@@ -47,14 +47,10 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "prettier --write",
-      "eslint . --fix",
-      "git add"
+      "eslint . --fix"
     ],
     "src/**/*.scss": [
-      "prettier --write",
-      "stylelint --syntax scss --fix",
-      "git add"
+      "stylelint --syntax scss --fix"
     ]
   },
   "husky": {

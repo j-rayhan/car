@@ -1,7 +1,8 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import tw from 'twin.macro'
-import { Navbar } from '../components/navbar'
+import { Navbar } from '../../components/navbar'
+import { TopSection } from './topSection'
 
 const PageContainer = styled.div`
   ${tw`
@@ -17,6 +18,6 @@ const PageContainer = styled.div`
 export const Home = () => (
   <PageContainer>
     <Navbar />
-    <div className="mt-9">Hello home</div>
+    <TopSection />
   </PageContainer>
 )

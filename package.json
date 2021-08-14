@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.2.0",
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -15,13 +16,16 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.0",
+    "react-responsive": "^9.0.0-beta.3",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0",
+    "twin.macro": "^2.6.2",
     "typescript": "~4.1.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
     "lint:scss:fix": "stylelint 'src/**/*.scss' --syntax scss --fix",
@@ -47,7 +51,7 @@
     ]
   },
   "lint-staged": {
-    "*.{ts,tsx,scss,css}": [
+    "*.{ts,tsx,scss}": [
       "prettier --write",
       "eslint --fix",
       "stylelint --fix",
@@ -55,8 +59,10 @@
     ]
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.12",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
+    "autoprefixer": "^9",
     "babel-eslint": "^10.1.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-prettier": "^8.3.0",
@@ -72,11 +78,13 @@
     "eslint-webpack-plugin": "^3.0.1",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
+    "postcss": "^7",
     "prettier": "^2.3.2",
     "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "^5.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0",
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint-config-standard": "^22.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }

@@ -1,0 +1,30 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
+  "ignoreDisables": true,
+  "defaultSeverity": "warning",
+  "rules": {
+    "color-no-invalid-hex": true,
+    "block-no-empty": null,
+    "comment-empty-line-before": [
+      "always",
+      {
+        "ignore": ["stylelint-commands", "after-comment"]
+      }
+    ],
+    "max-empty-lines": 2,
+    "color-hex-case": [
+      "lower",
+      {
+        "message": "Lowercase letters are easier to distinguish from numbers"
+      }
+    ],
+    "indentation": [
+      2,
+      {
+        "except": ["block"],
+        "message": "Please use 2 spaces for indentation.",
+        "severity": "warning"
+      }
+    ]
+  }
+}

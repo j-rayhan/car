@@ -53,11 +53,6 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "eslint --fix"
-    ],
-    "src/**/*.scss": [
-      "prettier --write",
-      "stylelint --syntax scss --fix",
-      "git add"
     ]
   },
   "devDependencies": {

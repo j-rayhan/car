@@ -47,9 +47,11 @@
     ]
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{ts,tsx,scss,css}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --fix",
+      "stylelint --fix",
+      "git add ."
     ]
   },
   "devDependencies": {

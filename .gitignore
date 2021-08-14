@@ -9,7 +9,12 @@
 /coverage
 
 # production
-/build
+build/*
+public/*
+docs/*
+templates/*
+src/react-app-env.d.ts
+src/serviceWorker.ts
 
 # misc
 .DS_Store

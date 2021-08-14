@@ -28,7 +28,8 @@
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx src --color",
     "lint:js:fix": "npm run lint:js -- --fix",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
-    "isReady": "npm run format && npm run lint && npm run build"
+    "isReady": "npm run format && npm run lint && npm run build",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,14 +46,11 @@
       "last 1 safari version"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint --fix"
+      "prettier --write",
+      "eslint --fix",
+      "git add"
     ]
   },
   "devDependencies": {

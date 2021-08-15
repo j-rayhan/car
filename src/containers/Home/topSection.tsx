@@ -5,6 +5,7 @@ import tw from 'twin.macro'
 import BlobImg from '../../assets/images/blob.svg'
 // import CarImg from '../../assets/images/car-big.png';
 import CarImg from '../../assets/images/mclaren-orange-big.png'
+import { ButtonX } from '../../components/button'
 import { SCREENS } from '../../components/responsive'
 
 const TopSectionContainer = styled.div`
@@ -141,6 +142,10 @@ export const TopSection = () => (
         Always choose the best car from our local stores of order it remotely at the best price for
         you and get the best quality cars for as long as you like.
       </Description>
+      <div className="flex">
+        <ButtonX text="Book your ride" />
+        <ButtonX theme="filled" text="Sell your car" />
+      </div>
     </LeftContainer>
     <RightContainer>
       <BlobContainer>

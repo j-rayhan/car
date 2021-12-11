@@ -139,8 +139,9 @@ export const TopSection = () => (
     <LeftContainer>
       <Slogan>Rent The Best Quality Car's With Us</Slogan>
       <Description>
-        Always choose the best car from our local stores of order it remotely at the best price for
-        you and get the best quality cars for as long as you like.
+        Always choose the best car from our local stores of order it remotely at
+        the best price for you and get the best quality cars for as long as you
+        like.
       </Description>
       <div className="flex flex-wrap mt-4">
         <ButtonX text="Book your ride" />

@@ -9,11 +9,15 @@ interface MarginProps {
 
 const HorizontalMargin = styled.span<MarginProps>`
   display: flex;
-  min-width: ${({ margin }) => (typeof margin === 'string' ? margin : `${margin}px`)};
+  min-width:
+    ${({ margin }) =>
+    typeof margin === 'string' ? margin : `${margin}px`};
 `
 const VerticalMargin = styled.span<MarginProps>`
   display: flex;
-  min-height: ${({ margin }) => (typeof margin === 'string' ? margin : `${margin}px`)};
+  min-height:
+    ${({ margin }) =>
+    typeof margin === 'string' ? margin : `${margin}px`};
 `
 
 export const MarginX = (props: MarginProps) => {

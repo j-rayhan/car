@@ -4,6 +4,7 @@ import tw from 'twin.macro'
 import { BookCard } from '../../components/bookCard'
 import { MarginX } from '../../components/Margin'
 import { Navbar } from '../../components/navbar'
+import { AboutUs } from './aboutUs'
 import { BookingSteps } from './bookingSteps'
 import { TopSection } from './topSection'
 
@@ -14,7 +15,8 @@ const PageContainer = styled.div`
       w-full
       h-full
       items-center
-    `}
+      overflow-x-hidden
+  `}
 `
 
 export const Home = () => (
@@ -23,7 +25,9 @@ export const Home = () => (
     <TopSection />
     <MarginX direction="vertical" margin="4em" />
     <BookCard />
-    <MarginX direction="vertical" margin="4em" />
+    <MarginX direction="vertical" margin="10em" />
     <BookingSteps />
+    <MarginX direction="vertical" margin="5em" />
+    <AboutUs />
   </PageContainer>
 )

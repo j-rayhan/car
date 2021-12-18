@@ -6,6 +6,7 @@ import { MarginX } from '../../components/Margin'
 import { Navbar } from '../../components/navbar'
 import { AboutUs } from './aboutUs'
 import { BookingSteps } from './bookingSteps'
+import { TopCars } from './topCars'
 import { TopSection } from './topSection'
 
 const PageContainer = styled.div`
@@ -27,7 +28,9 @@ export const Home = () => (
     <BookCard />
     <MarginX direction="vertical" margin="10em" />
     <BookingSteps />
-    <MarginX direction="vertical" margin="5em" />
+    <MarginX direction="vertical" margin="8em" />
     <AboutUs />
+    <MarginX direction="vertical" margin="8em" />
+    <TopCars />
   </PageContainer>
 )

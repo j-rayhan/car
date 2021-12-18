@@ -6,6 +6,7 @@ interface ButtonProps {
   // eslint-disable-next-line react/require-default-props
   theme?: 'filled' | 'outlined'
   text: string
+  className?: string
 }
 // px-5 py-3
 const BaseButton = styled.button`
@@ -49,9 +50,13 @@ const FilledButton = styled(BaseButton)`
   `}
 `
 
-export const ButtonX = ({ theme, text }: ButtonProps) => {
+export const ButtonX = ({ theme, text, className }: ButtonProps) => {
   if (theme === 'filled') {
-    return <FilledButton>{text}</FilledButton>
+    return <FilledButton className={className}>{text}</FilledButton>
   }
-  return <OutlinedButton>{text}</OutlinedButton>
+  return <OutlinedButton className={className}>{text}</OutlinedButton>
+}
+
+ButtonX.defaultProps = {
+  className: '',
 }
